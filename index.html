@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estetic Center Darleen Curiel – Clínica estética en Santiago de los Caballeros, República Dominicana. Faciales, corporales y terapias post operatorias con protocolos reales y resultados que se ven.">
+  <meta name="keywords" content="clínica estética Santiago, HydraFacial, Venus Legacy, HIFU, Hollywood Peel, post operatorio, radiofrecuencia, plasma rico en plaquetas, Santiago República Dominicana, Darleen Curiel">
+  <meta name="author" content="Estetic Center Darleen Curiel">
+  <meta property="og:title" content="Estetic Center Darleen Curiel | Santiago, Rep. Dom.">
+  <meta property="og:description" content="Faciales, corporales y post operatorio en Santiago, RD. HydraFacial, Venus Legacy, HIFU y más. Resultados reales, sin promesas vacías.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FDFAF6">
+  <title>Estetic Center Darleen Curiel · Santiago, República Dominicana</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span>DARLEEN</span>
+        <span class="preloader-logo-sub">CURIEL</span>
+      </div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-main">DARLEEN CURIEL</span>
+        <span class="logo-sub">ESTETIC CENTER</span>
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#faciales">Faciales</a>
+        <a href="#corporales">Corporales</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contacto" class="nav-cta">Reservar</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Panel -->
+    <div class="mm-wrap" id="mobileMenu" aria-hidden="true">
+      <div class="mm-backdrop" id="mmBackdrop"></div>
+      <div class="mm-panel">
+        <div class="mm-head">
+          <div class="mm-head-logo">
+            <span class="logo-main">DARLEEN CURIEL</span>
+            <span class="logo-sub">ESTETIC CENTER</span>
+          </div>
+          <button class="mm-close" id="mmClose" aria-label="Cerrar menú">
+            <span></span><span></span>
+          </button>
+        </div>
+        <nav class="mm-nav">
+          <a href="#nosotros" class="mm-link">
+            <span class="mm-link__num">01</span>
+            <span class="mm-link__label">Nosotros</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+          <a href="#faciales" class="mm-link">
+            <span class="mm-link__num">02</span>
+            <span class="mm-link__label">Faciales</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+          <a href="#corporales" class="mm-link">
+            <span class="mm-link__num">03</span>
+            <span class="mm-link__label">Corporales</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+          <a href="#resultados" class="mm-link">
+            <span class="mm-link__num">04</span>
+            <span class="mm-link__label">Resultados</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+          <a href="#testimonios" class="mm-link">
+            <span class="mm-link__num">05</span>
+            <span class="mm-link__label">Testimonios</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+          <a href="#contacto" class="mm-link">
+            <span class="mm-link__num">06</span>
+            <span class="mm-link__label">Contacto</span>
+            <span class="mm-link__arrow">→</span>
+          </a>
+        </nav>
+        <div class="mm-foot">
+          <a href="https://wa.me/18296321151?text=Hola%2C%20quiero%20reservar%20una%20cita"
+             target="_blank" rel="noopener" class="mm-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Reservar cita
+          </a>
+          <div class="mm-social">
+            <a href="https://www.instagram.com/darleencuriel" target="_blank" rel="noopener">@darleencuriel</a>
+            <span class="mm-social-sep">·</span>
+            <a href="tel:8296321151">829-632-1151</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg">
+      <img src="img/hero/hero-clinica.jpg" alt="Estetic Center Darleen Curiel" class="hero-img" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-hero">Santiago · República Dominicana</p>
+      <h1 class="hero-title">
+        <span class="hero-line reveal-hero" style="--d:0.1s">El Arte</span>
+        <span class="hero-line italic reveal-hero" style="--d:0.25s">de la Belleza</span>
+        <span class="hero-line reveal-hero" style="--d:0.4s">Perfecta</span>
+      </h1>
+      <p class="hero-subtitle reveal-hero" style="--d:0.55s">Ciencia aplicada a lo que ves en el espejo.</p>
+      <div class="hero-actions reveal-hero" style="--d:0.7s">
+        <a href="https://wa.me/18296321151?text=Hola%2C%20me%20interesa%20conocer%20los%20tratamientos%20disponibles"
+           target="_blank" rel="noopener" class="btn-primary">Reservar Consulta</a>
+        <a href="#nosotros" class="btn-ghost">Conocer Más</a>
+      </div>
+    </div>
+    <div class="hero-deco">
+      <div class="hero-deco-line"></div>
+    </div>
+    <a href="#nosotros" class="hero-scroll" aria-label="Scroll hacia abajo">
+      <span class="scroll-label">Scroll</span>
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>HydraFacial</span><span class="sep">·</span>
+      <span>Venus Legacy</span><span class="sep">·</span>
+      <span>HIFU Facial</span><span class="sep">·</span>
+      <span>Hollywood Peel</span><span class="sep">·</span>
+      <span>Post Operatorio</span><span class="sep">·</span>
+      <span>Radiofrecuencia</span><span class="sep">·</span>
+      <span>Plasma Rico en Plaquetas</span><span class="sep">·</span>
+      <span>Perfilamiento de Labios</span><span class="sep">·</span>
+      <span>Lipo HIFU</span><span class="sep">·</span>
+      <span>Maderoterapia</span><span class="sep">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>HydraFacial</span><span class="sep">·</span>
+      <span>Venus Legacy</span><span class="sep">·</span>
+      <span>HIFU Facial</span><span class="sep">·</span>
+      <span>Hollywood Peel</span><span class="sep">·</span>
+      <span>Post Operatorio</span><span class="sep">·</span>
+      <span>Radiofrecuencia</span><span class="sep">·</span>
+      <span>Plasma Rico en Plaquetas</span><span class="sep">·</span>
+      <span>Perfilamiento de Labios</span><span class="sep">·</span>
+      <span>Lipo HIFU</span><span class="sep">·</span>
+      <span>Maderoterapia</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- ========== QUIÉNES SOMOS ========== -->
+  <section id="nosotros" class="section-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visuals">
+          <div class="about-img-main reveal">
+            <img src="img/equipo/doctora-principal.jpg" alt="Darleen Curiel – Especialista en Estética Avanzada">
+            <div class="about-img-badge">
+              <span>Especialistas</span>
+              <span>Certificadas</span>
+            </div>
+          </div>
+          <div class="about-img-secondary reveal" style="--delay:0.2s">
+            <img src="img/clinica/clinica-interior.jpg" alt="Interior Clínica Darleen Curiel">
+          </div>
+          <div class="about-gold-line"></div>
+        </div>
+        <div class="about-content">
+          <p class="eyebrow reveal">Quiénes Somos</p>
+          <h2 class="section-title reveal" style="--delay:0.15s">
+            No somos un spa.<br>
+            <em>Somos algo diferente.</em>
+          </h2>
+          <p class="body-text reveal" style="--delay:0.2s">
+            En Darleen Curiel nos especializamos en el cuidado real del cuerpo y el rostro. Faciales, terapias post quirúrgicas y tratamientos reductores con un enfoque que no improvisa.
+          </p>
+          <p class="body-text reveal" style="--delay:0.25s">
+            Combinamos años de experiencia con equipos que conocemos de adentro, para darte resultados que se ven — no solo en el momento, sino días después.
+          </p>
+          <div class="about-stats reveal" style="--delay:0.3s">
+            <div class="stat-pill">
+              <span class="stat-num">+500</span>
+              <span class="stat-lbl">Clientas que volvieron</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">+20</span>
+              <span class="stat-lbl">Protocolos activos</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">1 a 1</span>
+              <span class="stat-lbl">Siempre contigo</span>
+            </div>
+          </div>
+          <a href="#contacto" class="btn-primary reveal" style="--delay:0.35s">Conoce Nuestros Servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MANIFESTO ========== -->
+  <section class="section-manifesto">
+    <div class="manifesto-inner">
+      <div class="manifesto-number reveal" style="--delay:0s">01</div>
+      <div class="manifesto-body">
+        <p class="manifesto-quote reveal" style="--delay:0.15s">
+          "Cuidar la piel<br>no es vanidad.<br><em>Es inteligencia."</em>
+        </p>
+        <div class="manifesto-foot reveal" style="--delay:0.3s">
+          <span class="manifesto-line-el"></span>
+          <span class="manifesto-author">Darleen Curiel</span>
+        </div>
+      </div>
+      <div class="manifesto-aside reveal" style="--delay:0.2s">
+        <p>En cada sesión tomamos decisiones. Empezamos por entender tu piel, no por venderle algo.</p>
+        <a href="#contacto" class="manifesto-link">Habla con nosotras →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS FACIALES ========== -->
+  <section id="faciales" class="section-facial">
+    <div class="section-bg-label" aria-hidden="true">FACIALES</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Tratamientos Faciales</p>
+        <h2 class="section-title">Para tu piel,<br><em>no para todas</em></h2>
+        <p class="section-desc">Protocolos reales. Analizamos antes de actuar. Sin fórmulas genéricas.</p>
+      </div>
+
+      <div class="facial-grid">
+        <!-- Featured -->
+        <article class="f-card f-card--featured reveal" style="--delay:0s">
+          <div class="f-card__img">
+            <img src="img/faciales/hydrafacial.jpg" alt="HydraFacial">
+            <span class="f-card__badge">La favorita</span>
+          </div>
+          <div class="f-card__body">
+            <h3>HydraFacial</h3>
+            <p>Limpieza, extracción e hidratación en un solo protocolo. Tu piel lo siente antes de salir de la camilla.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20HydraFacial" target="_blank" rel="noopener" class="card-link">Consultar Precio <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card reveal" style="--delay:0.1s">
+          <div class="f-card__img">
+            <img src="img/faciales/hifu-facial.jpg" alt="HIFU Facial">
+          </div>
+          <div class="f-card__body">
+            <h3>HIFU Facial</h3>
+            <p>Lifting sin bisturí. El ultrasonido trabaja donde el ojo no llega, y el resultado lo ves en el espejo.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20HIFU%20Facial" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card reveal" style="--delay:0.2s">
+          <div class="f-card__img">
+            <img src="img/faciales/hollywood-peel.jpg" alt="Hollywood Peel">
+          </div>
+          <div class="f-card__body">
+            <h3>Hollywood Peel</h3>
+            <p>Carbono + láser = piel que sorprende. Poros cerrados, manchas menos, esa luz que no se puede fingir.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Hollywood%20Peel" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card reveal" style="--delay:0.3s">
+          <div class="f-card__img">
+            <img src="img/faciales/plasma-plaquetas.jpg" alt="Plasma Rico en Plaquetas">
+          </div>
+          <div class="f-card__body">
+            <h3>Plasma Rico en Plaquetas</h3>
+            <p>Tu propio cuerpo hace el trabajo. Nosotros lo activamos donde más se necesita.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20PRP" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Text-only cards -->
+        <article class="f-card f-card--minimal reveal" style="--delay:0.1s">
+          <div class="f-card__body">
+            <h3>Venus Legacy Facial</h3>
+            <p>Calor controlado que estimula colágeno donde ya no llega solo. El antes y el después se explican solos.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Venus%20Legacy%20Facial" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card f-card--minimal reveal" style="--delay:0.2s">
+          <div class="f-card__body">
+            <h3>Ácido Hialurónico</h3>
+            <p>Volumen donde te falta, definición donde te sobra tensión. Sin exagerar. Sin que se note que fue algo.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Ácido%20Hialurónico" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card f-card--minimal reveal" style="--delay:0.3s">
+          <div class="f-card__body">
+            <h3>Radiofrecuencia Facial</h3>
+            <p>Colágeno que se va recuperando con cada sesión. Una de esas cosas que empiezas a notar tú misma.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Radiofrecuencia" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="f-card f-card--minimal reveal" style="--delay:0.4s">
+          <div class="f-card__body">
+            <h3>Mesoterapia Facial</h3>
+            <p>Lo que tu piel necesita, directo donde lo necesita. Sin rodeos, sin esperar semanas.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Mesoterapia" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Extended Services Tags -->
+      <div class="more-services reveal">
+        <p class="more-services__label">También disponible:</p>
+        <div class="services-tags">
+          <span>Limpieza Facial</span>
+          <span>Anti Edad</span>
+          <span>Microdermabrasión</span>
+          <span>Enzimas Faciales</span>
+          <span>Casmara VIP</span>
+          <span>Bioestimulación</span>
+          <span>PDRN</span>
+          <span>Lipopapada con HIFU</span>
+          <span>Láser CO2</span>
+          <span>Perfilamiento de Labios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="section-cta-banner">
+    <div class="cta-banner-image">
+      <img src="img/banners/banner-cta.jpg" alt="Reserva tu tratamiento">
+      <div class="cta-banner-overlay"></div>
+    </div>
+    <div class="cta-banner-content reveal">
+      <p class="eyebrow">Consulta Gratuita</p>
+      <h2>Tu piel ya sabe<br><em>qué quiere.</em></h2>
+      <p>Cuéntanos cómo está. Te decimos exactamente qué necesita, sin venderte lo que no es para ti.</p>
+      <a href="https://wa.me/18296321151?text=Hola%2C%20quiero%20agendar%20una%20consulta%20gratuita"
+         target="_blank" rel="noopener" class="btn-primary btn-lg">
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS CORPORALES ========== -->
+  <section id="corporales" class="section-corporal">
+    <div class="section-bg-label" aria-hidden="true">CUERPO</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Cuerpo &amp; Bienestar</p>
+        <h2 class="section-title">El cuerpo<br><em>al detalle</em></h2>
+        <p class="section-desc">Protocolos pensados para resultados que se ven, no solo se prometen.</p>
+      </div>
+
+      <!-- Venus Legacy Featured -->
+      <div class="corp-featured reveal">
+        <div class="corp-featured__img">
+          <img src="img/corporales/venus-legacy-corporal.jpg" alt="Venus Legacy Corporal">
+          <div class="corp-featured__label">Tratamiento Estrella</div>
+        </div>
+        <div class="corp-featured__content">
+          <span class="eyebrow">Destacado</span>
+          <h3>Venus Legacy Corporal</h3>
+          <p>El tratamiento corporal más solicitado en la clínica. Radiofrecuencia multipolar que trabaja desde adentro: tensa, define, elimina lo que no quieres y no pide tiempo de recuperación.</p>
+          <ul class="benefit-list">
+            <li><span class="check">✓</span> Piel más firme y definida</li>
+            <li><span class="check">✓</span> Celulitis que se va reduciendo sesión a sesión</li>
+            <li><span class="check">✓</span> Colágeno que se activa donde más se necesita</li>
+            <li><span class="check">✓</span> Sin dolor. Sin días de baja.</li>
+          </ul>
+          <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Venus%20Legacy%20Corporal" target="_blank" rel="noopener" class="btn-primary">Consultar Tratamiento</a>
+        </div>
+      </div>
+
+      <!-- Grid corporales -->
+      <div class="corp-grid">
+        <article class="corp-card reveal" style="--delay:0s">
+          <div class="corp-card__img">
+            <img src="img/corporales/lipo-hifu.jpg" alt="Lipo HIFU">
+          </div>
+          <div class="corp-card__body">
+            <h3>Lipo HIFU</h3>
+            <p>Ultrasonido que llega donde el ejercicio no puede. Sin cirugía, sin cicatrices, sin drama.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Lipo%20HIFU" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="corp-card reveal" style="--delay:0.1s">
+          <div class="corp-card__img">
+            <img src="img/corporales/post-operatorio.jpg" alt="Terapias Post Operatorias">
+          </div>
+          <div class="corp-card__body">
+            <h3>Post Operatorio</h3>
+            <p>La operación fue con el cirujano. La recuperación es con nosotros. Saber cómo hacerlo cambia todo.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Post%20Operatorio" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="corp-card reveal" style="--delay:0.2s">
+          <div class="corp-card__img">
+            <img src="img/corporales/maderoterapia.jpg" alt="Maderoterapia">
+          </div>
+          <div class="corp-card__body">
+            <h3>Maderoterapia</h3>
+            <p>Técnica ancestral para moldear, tonificar y reactivar la circulación.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Maderoterapia" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="corp-card reveal" style="--delay:0.3s">
+          <div class="corp-card__img">
+            <img src="img/corporales/lipocavitacion.jpg" alt="Lipocavitación">
+          </div>
+          <div class="corp-card__body">
+            <h3>Lipocavitación</h3>
+            <p>Las células grasas se van. Tu contorno se define. No duele y no interrumpe tu semana.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Lipocavitación" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="corp-card corp-card--text reveal" style="--delay:0s">
+          <div class="corp-card__body">
+            <h3>Definición HD</h3>
+            <p>Contorno corporal escultural. Perfección en cada detalle de tu silueta.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Definición%20HD" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="corp-card corp-card--text reveal" style="--delay:0.1s">
+          <div class="corp-card__body">
+            <h3>Moldeamiento Corporal</h3>
+            <p>Protocolo completo con técnicas combinadas para redefinir tu silueta.</p>
+            <a href="https://wa.me/18296321151?text=Quiero%20información%20sobre%20Moldeamiento%20Corporal" target="_blank" rel="noopener" class="card-link">Consultar <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ANTES Y DESPUÉS ========== -->
+  <section id="resultados" class="section-ba">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Casos Reales</p>
+        <h2 class="section-title">Resultados que<br><em>hablan solos</em></h2>
+        <p class="section-desc">Casos reales de clientas que confiaron en nuestra experiencia y tecnología.</p>
+      </div>
+
+      <div class="ba-grid">
+        <div class="ba-item reveal" style="--delay:0s">
+          <div class="ba-pair">
+            <div class="ba-side">
+              <img src="img/antes-despues/labios-before.jpg" alt="Antes – Perfilamiento de Labios">
+              <span class="ba-tag">Antes</span>
+            </div>
+            <div class="ba-side ba-side--after">
+              <img src="img/antes-despues/labios-after.jpg" alt="Después – Perfilamiento de Labios">
+              <span class="ba-tag">Después</span>
+            </div>
+          </div>
+          <p class="ba-treatment">Perfilamiento de Labios</p>
+        </div>
+
+        <div class="ba-item reveal" style="--delay:0.15s">
+          <div class="ba-pair">
+            <div class="ba-side">
+              <img src="img/antes-despues/facial-before.jpg" alt="Antes – Rejuvenecimiento Facial">
+              <span class="ba-tag">Antes</span>
+            </div>
+            <div class="ba-side ba-side--after">
+              <img src="img/antes-despues/facial-after.jpg" alt="Después – Rejuvenecimiento Facial">
+              <span class="ba-tag">Después</span>
+            </div>
+          </div>
+          <p class="ba-treatment">Rejuvenecimiento Facial</p>
+        </div>
+
+        <div class="ba-item reveal" style="--delay:0.3s">
+          <div class="ba-pair">
+            <div class="ba-side">
+              <img src="img/antes-despues/corporal-before.jpg" alt="Antes – Moldeamiento Corporal">
+              <span class="ba-tag">Antes</span>
+            </div>
+            <div class="ba-side ba-side--after">
+              <img src="img/antes-despues/corporal-after.jpg" alt="Después – Moldeamiento Corporal">
+              <span class="ba-tag">Después</span>
+            </div>
+          </div>
+          <p class="ba-treatment">Moldeamiento Corporal</p>
+        </div>
+
+        <div class="ba-item reveal" style="--delay:0.45s">
+          <div class="ba-pair">
+            <div class="ba-side">
+              <img src="img/antes-despues/papada-before.jpg" alt="Antes – Lipopapada HIFU">
+              <span class="ba-tag">Antes</span>
+            </div>
+            <div class="ba-side ba-side--after">
+              <img src="img/antes-despues/papada-after.jpg" alt="Después – Lipopapada HIFU">
+              <span class="ba-tag">Después</span>
+            </div>
+          </div>
+          <p class="ba-treatment">Lipopapada con HIFU</p>
+        </div>
+      </div>
+
+      <div class="ba-cta reveal">
+        <p>¿Quieres ver más casos reales?</p>
+        <a href="https://www.instagram.com/darleencuriel" target="_blank" rel="noopener" class="btn-outline">
+          Ver en Instagram @darleencuriel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECNOLOGÍAS ========== -->
+  <section id="tecnologias" class="section-tech">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Nuestros Equipos</p>
+        <h2 class="section-title">Equipos que<br><em>conocemos de adentro</em></h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card reveal" style="--delay:0s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><path d="M18 28 Q28 14 38 28 Q28 42 18 28Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3>Venus Legacy</h3>
+          <p>Sistema multipolar de radiofrecuencia con pulso magnético pulsado. La tecnología #1 del mundo en remodelación.</p>
+        </div>
+        <div class="tech-card reveal" style="--delay:0.1s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><path d="M28 14V42M18 24H38M16 34H40" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>HIFU</h3>
+          <p>Ultrasonido focalizado de alta intensidad para lifting facial no invasivo y reducción de grasa corporal.</p>
+        </div>
+        <div class="tech-card reveal" style="--delay:0.2s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><circle cx="28" cy="28" r="8" stroke="currentColor" stroke-width="1.2"/><path d="M28 8V20M28 36V48M8 28H20M36 28H48" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Láser CO2</h3>
+          <p>Tecnología láser fraccionada para renovación celular profunda, manchas y rejuvenecimiento total del rostro.</p>
+        </div>
+        <div class="tech-card reveal" style="--delay:0.3s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><path d="M18 36 Q23 18 28 28 Q33 18 38 36" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+          </div>
+          <h3>HydraFacial MD</h3>
+          <p>Sistema patentado de limpieza, extracción e hidratación en una experiencia sensorial única.</p>
+        </div>
+        <div class="tech-card reveal" style="--delay:0.1s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><path d="M20 20 L28 14 L36 20 L36 36 L20 36 Z" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="28" cy="28" r="4" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3>PRP</h3>
+          <p>Plasma Rico en Plaquetas para regeneración celular y bioestimulación profunda de alta efectividad.</p>
+        </div>
+        <div class="tech-card reveal" style="--delay:0.2s">
+          <div class="tech-icon">
+            <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" stroke="currentColor" stroke-width="1.2"/><path d="M18 28 Q28 10 38 28" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/><path d="M16 34 Q28 48 40 34" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+          </div>
+          <h3>Casmara VIP</h3>
+          <p>Sistema cosmético profesional que usamos para protocolos faciales de alta exigencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="section-stats">
+    <div class="stats-wrap">
+      <div class="stat-block reveal" style="--delay:0s">
+        <div class="stat-block__num">
+          <span class="counter" data-target="500">0</span><span>+</span>
+        </div>
+        <p>Clientas que volvieron</p>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-block reveal" style="--delay:0.15s">
+        <div class="stat-block__num">
+          <span class="counter" data-target="20">0</span><span>+</span>
+        </div>
+        <p>Tratamientos especializados</p>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-block reveal" style="--delay:0.3s">
+        <div class="stat-block__num">
+          <span class="counter" data-target="100">0</span><span>%</span>
+        </div>
+        <p>de confianza en Santiago</p>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-block reveal" style="--delay:0.45s">
+        <div class="stat-block__num">
+          <span>5</span><span class="stat-star">★</span>
+        </div>
+        <p>Calificación de clientas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFICIOS ========== -->
+  <section class="section-benefits">
+    <div class="container">
+      <div class="benefits-layout">
+        <div class="benefits-img reveal">
+          <img src="img/clinica/beneficios-clinica.jpg" alt="Clínica Darleen Curiel Santiago">
+          <div class="benefits-img-deco"></div>
+        </div>
+        <div class="benefits-content">
+          <p class="eyebrow reveal">Lo que nos diferencia</p>
+          <h2 class="section-title reveal" style="--delay:0.15s">La diferencia<br><em>Darleen Curiel</em></h2>
+          <div class="benefit-items">
+            <div class="benefit-item reveal" style="--delay:0.2s">
+              <div class="benefit-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h4>Sin fórmulas genéricas</h4>
+                <p>Miramos tu piel antes de tocarla. Lo que funciona para otras, puede no ser lo tuyo.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal" style="--delay:0.27s">
+              <div class="benefit-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div>
+                <h4>Equipos que usamos porque funcionan</h4>
+                <p>No compramos lo que está de moda. Usamos lo que tiene respaldo y lo que hemos visto trabajar.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal" style="--delay:0.34s">
+              <div class="benefit-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </div>
+              <div>
+                <h4>Resultados honestos</h4>
+                <p>Sin sobrevender. Cada protocolo empieza con un diagnóstico real, no con lo que más cuesta.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal" style="--delay:0.41s">
+              <div class="benefit-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <div>
+                <h4>Formadas para esto</h4>
+                <p>Seguimos aprendiendo porque la piel no deja de sorprendernos. Y eso nos parece lo mínimo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section id="testimonios" class="section-testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Clientas Reales</p>
+        <h2 class="section-title">Lo que dicen<br><em>de nosotros</em></h2>
+      </div>
+      <div class="testimonials-wrap">
+        <div class="testimonials-track" id="testimonialTrack">
+          <div class="tcard">
+            <div class="tcard__stars">★★★★★</div>
+            <blockquote>"Los resultados del Venus Legacy superaron mis expectativas completamente. Mi piel se ve increíble y me siento otra persona. El trato es excepcional, como en una clínica de Miami."</blockquote>
+            <div class="tcard__author">
+              <div class="tcard__avatar"><img src="img/testimonios/testimonial-1.jpg" alt="María L."></div>
+              <div><strong>María L.</strong><span>Venus Legacy Corporal</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars">★★★★★</div>
+            <blockquote>"Me hice el HydraFacial y quedé enamorada del resultado. La piel luminosa y suave como nunca. Darleen y su equipo son unas profesionales increíbles."</blockquote>
+            <div class="tcard__author">
+              <div class="tcard__avatar"><img src="img/testimonios/testimonial-2.jpg" alt="Carolina V."></div>
+              <div><strong>Carolina V.</strong><span>HydraFacial</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars">★★★★★</div>
+            <blockquote>"Después de mi cirugía, las terapias post operatorias fueron fundamentales. La recuperación fue increíblemente rápida y el resultado final es espectacular. 100% recomendadas."</blockquote>
+            <div class="tcard__author">
+              <div class="tcard__avatar"><img src="img/testimonios/testimonial-3.jpg" alt="Ana R."></div>
+              <div><strong>Ana R.</strong><span>Terapias Post Operatorias</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars">★★★★★</div>
+            <blockquote>"El perfilamiento de labios quedó perfecto. Natural, elegante, exactamente lo que quería. Sin duda el mejor lugar para tratamientos estéticos en Santiago."</blockquote>
+            <div class="tcard__author">
+              <div class="tcard__avatar"><img src="img/testimonios/testimonial-4.jpg" alt="Gabriela M."></div>
+              <div><strong>Gabriela M.</strong><span>Perfilamiento de Labios</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars">★★★★★</div>
+            <blockquote>"El Hollywood Peel transformó mi piel por completo. Los poros se cerraron, las manchas desaparecieron y tengo una luminosidad que nunca había tenido. Increíble."</blockquote>
+            <div class="tcard__author">
+              <div class="tcard__avatar"><img src="img/testimonios/testimonial-5.jpg" alt="Sofía P."></div>
+              <div><strong>Sofía P.</strong><span>Hollywood Peel</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-controls">
+          <button class="t-btn t-btn--prev" id="tPrev" aria-label="Anterior">←</button>
+          <div class="t-dots" id="tDots"></div>
+          <button class="t-btn t-btn--next" id="tNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERÍA ========== -->
+  <section id="galeria" class="section-gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Nuestra Clínica</p>
+        <h2 class="section-title">Un espacio<br><em>hecho para ti</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="g-item g-item--tall reveal" style="--delay:0s">
+          <img src="img/galeria/clinica-1.jpg" alt="Interior Clínica Darleen Curiel">
+          <div class="g-overlay"><span>Vista Interior</span></div>
+        </div>
+        <div class="g-item reveal" style="--delay:0.1s">
+          <img src="img/galeria/equipos.jpg" alt="Equipos Clínica Darleen Curiel">
+          <div class="g-overlay"><span>Tecnología Premium</span></div>
+        </div>
+        <div class="g-item reveal" style="--delay:0.2s">
+          <img src="img/galeria/tratamiento.jpg" alt="Tratamiento en proceso">
+          <div class="g-overlay"><span>Nuestros Tratamientos</span></div>
+        </div>
+        <div class="g-item reveal" style="--delay:0.1s">
+          <img src="img/galeria/sala.jpg" alt="Sala VIP">
+          <div class="g-overlay"><span>Sala VIP</span></div>
+        </div>
+        <div class="g-item g-item--wide reveal" style="--delay:0.2s">
+          <img src="img/galeria/clinica-2.jpg" alt="Clínica Darleen Curiel exterior">
+          <div class="g-overlay"><span>Nuestra Clínica</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="section-faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-header">
+          <p class="eyebrow reveal">Preguntas frecuentes</p>
+          <h2 class="section-title reveal" style="--delay:0.1s">Lo que siempre<br><em>nos preguntan</em></h2>
+          <p class="faq-subtext reveal" style="--delay:0.2s">Si tienes otra duda, escríbenos directamente. Respondemos rápido.</p>
+          <a href="https://wa.me/18296321151?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20sus%20tratamientos"
+             target="_blank" rel="noopener"
+             class="btn-primary reveal" style="--delay:0.3s">Preguntar por WhatsApp</a>
+        </div>
+        <div class="faq-list reveal" style="--delay:0.15s">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿Cuántas sesiones necesito para ver resultados?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Depende del tratamiento y de tu piel. Con el HydraFacial, muchas clientas notan diferencia al salir. Con tratamientos como Venus Legacy o HIFU, los resultados se van acumulando entre sesiones. En tu primera consulta te decimos exactamente qué esperar y cuándo.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿El HIFU duele?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Se siente calor y algo de presión, pero es completamente tolerable. Muchas clientas describen la sensación como "un hormigueo profundo". No requiere anestesia y puedes seguir con tu día inmediatamente después.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿Cuándo puedo empezar las terapias post operatorias?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Generalmente se recomienda iniciar entre las 72 horas y una semana después de la cirugía, dependiendo del procedimiento. Lo ideal es que nos contactes antes de operarte para coordinar el protocolo desde el primer día y aprovechar al máximo la recuperación.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿Puedo combinar tratamientos en la misma sesión?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Sí, muchos tratamientos son complementarios y se pueden combinar estratégicamente. Por ejemplo, HydraFacial + Radiofrecuencia es una combinación muy popular. Todo depende de tu piel y tus objetivos — lo evaluamos contigo en consulta.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿Los resultados del Venus Legacy son permanentes?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Los resultados son duraderos, especialmente si mantienes un estilo de vida saludable. Se recomienda un mantenimiento periódico para sostener y potenciar los resultados. Muchas clientas hacen sesiones de mantenimiento cada 4-6 semanas después del protocolo inicial.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>¿Atienden sin cita previa?</span>
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a">
+              <p>Trabajamos principalmente con cita para garantizarte el tiempo y la atención que mereces. Escríbenos por WhatsApp — coordinamos rápido y siempre buscamos la forma de atenderte lo antes posible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section-contact">
+    <div class="contact-layout">
+      <div class="contact-image-col">
+        <img src="img/contacto/contacto-bg.jpg" alt="Reserva tu cita en Darleen Curiel">
+        <div class="contact-image-overlay">
+          <div class="contact-image-text">
+            <h2>Reserva tu<br><em>cita hoy</em></h2>
+            <p>Comienza tu transformación</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-col">
+        <p class="eyebrow reveal">Contáctanos</p>
+        <h3 class="reveal" style="--delay:0.1s">Estamos aquí<br>para ti</h3>
+        <p class="contact-sub reveal" style="--delay:0.2s">Escríbenos directamente y te responderemos a la brevedad con toda la información y precios.</p>
+
+        <div class="contact-options">
+          <a href="https://wa.me/18296321151?text=Hola%2C%20me%20interesa%20conocer%20sus%20tratamientos"
+             target="_blank" rel="noopener"
+             class="contact-opt contact-opt--primary reveal" style="--delay:0.25s">
+            <div class="contact-opt__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <span class="opt-label">WhatsApp Principal</span>
+              <span class="opt-value">829-632-1151</span>
+            </div>
+          </a>
+          <a href="https://wa.me/18296925111?text=Hola%2C%20me%20interesa%20conocer%20sus%20tratamientos"
+             target="_blank" rel="noopener"
+             class="contact-opt reveal" style="--delay:0.32s">
+            <div class="contact-opt__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <span class="opt-label">WhatsApp</span>
+              <span class="opt-value">829-692-5111</span>
+            </div>
+          </a>
+          <a href="https://wa.me/18095754829?text=Hola%2C%20me%20interesa%20conocer%20sus%20tratamientos"
+             target="_blank" rel="noopener"
+             class="contact-opt reveal" style="--delay:0.39s">
+            <div class="contact-opt__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <span class="opt-label">WhatsApp</span>
+              <span class="opt-value">809-575-4829</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/darleencuriel"
+             target="_blank" rel="noopener"
+             class="contact-opt reveal" style="--delay:0.46s">
+            <div class="contact-opt__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div>
+              <span class="opt-label">Instagram</span>
+              <span class="opt-value">@darleencuriel</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-location reveal" style="--delay:0.5s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Santiago de los Caballeros, República Dominicana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-main">DARLEEN CURIEL</span>
+          <span class="logo-sub">ESTETIC CENTER</span>
+        </div>
+        <p>Clínica estética en Santiago de los Caballeros, República Dominicana. Cuidamos la piel con criterio, experiencia y honestidad.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/darleencuriel" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/18296321151" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Tratamientos</h4>
+        <ul>
+          <li><a href="#faciales">Faciales</a></li>
+          <li><a href="#corporales">Corporales</a></li>
+          <li><a href="#corporales">Post Operatorio</a></li>
+          <li><a href="#faciales">HydraFacial</a></li>
+          <li><a href="#faciales">HIFU Facial</a></li>
+          <li><a href="#corporales">Venus Legacy</a></li>
+          <li><a href="#faciales">Hollywood Peel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/18296321151" target="_blank">829-632-1151</a></li>
+          <li><a href="https://wa.me/18296925111" target="_blank">829-692-5111</a></li>
+          <li><a href="https://wa.me/18095754829" target="_blank">809-575-4829</a></li>
+          <li><a href="https://www.instagram.com/darleencuriel" target="_blank">@darleencuriel</a></li>
+          <li><span>Santiago, Rep. Dom.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Estetic Center Darleen Curiel · Santiago de los Caballeros, República Dominicana</p>
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOAT ========== -->
+  <a href="https://wa.me/18296321151?text=Hola%2C%20me%20interesa%20conocer%20sus%20tratamientos%20estéticos"
+     target="_blank" rel="noopener"
+     class="wa-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-float__tooltip">¡Escríbenos!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
