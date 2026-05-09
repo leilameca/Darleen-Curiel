@@ -1377,19 +1377,20 @@ img {
 }
 .ba-side {
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/5;
   overflow: hidden;
   background: var(--c-dark);
 }
 .ba-side img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
   filter: grayscale(.3);
   transition: filter .4s var(--ease), transform .6s var(--ease);
 }
 .ba-side--after img { filter: grayscale(0); }
-.ba-item:hover .ba-side img { transform: scale(1.04); }
+.ba-item:hover .ba-side img { transform: scale(1.02); }
 .ba-tag {
   position: absolute;
   bottom: .5rem;
