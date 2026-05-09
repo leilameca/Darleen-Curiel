@@ -1030,7 +1030,7 @@ img {
    ================================================================ */
 .section-cta-banner {
   position: relative;
-  min-height: 480px;
+  min-height: 560px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1049,21 +1049,28 @@ img {
   inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(28,25,23,.9) 0%,
-    rgba(28,25,23,.75) 45%,
-    rgba(28,25,23,.4) 100%
+    rgba(28,25,23,.95) 0%,
+    rgba(28,25,23,.82) 50%,
+    rgba(28,25,23,.55) 100%
   );
 }
-.cta-banner-content {
+.cta-banner-inner {
   position: relative;
   z-index: 2;
-  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 6rem);
-  max-width: 600px;
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding: clamp(3.5rem, 8vw, 6rem) clamp(1.5rem, 6vw, 6rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
 }
+.cta-banner-content { max-width: 480px; }
 .cta-banner-content .eyebrow { color: var(--c-gold-lt); }
 .cta-banner-content h2 {
   font-family: var(--f-serif);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 300;
   color: var(--c-white);
   margin-bottom: 1rem;
@@ -1073,8 +1080,101 @@ img {
 .cta-banner-content p {
   color: rgba(255,255,255,.65);
   font-size: .95rem;
-  margin-bottom: 2rem;
   line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* CTA Form */
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cta-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.cta-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.cta-form-field label {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+}
+.cta-form-field label span {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: .7;
+}
+.cta-form-field input,
+.cta-form-field select,
+.cta-form-field textarea {
+  width: 100%;
+  padding: .8rem 1rem;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--r-sm);
+  color: var(--c-white);
+  font-family: var(--f-sans);
+  font-size: .9rem;
+  outline: none;
+  transition: border-color .3s var(--ease), background .3s var(--ease);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cta-form-field input::placeholder,
+.cta-form-field textarea::placeholder { color: rgba(255,255,255,.28); }
+.cta-form-field input:focus,
+.cta-form-field select:focus,
+.cta-form-field textarea:focus {
+  border-color: var(--c-gold);
+  background: rgba(255,255,255,.1);
+}
+.cta-form-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A96E' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+.cta-form-field select option,
+.cta-form-field select optgroup {
+  background: var(--c-dark);
+  color: var(--c-white);
+}
+.cta-form-field textarea { resize: none; }
+.cta-form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  padding: 1rem 2rem;
+  background: #25D366;
+  color: #fff;
+  font-family: var(--f-sans);
+  font-size: .88rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  border-radius: var(--r-full);
+  border: none;
+  cursor: pointer;
+  transition: background .3s var(--ease), transform .25s var(--ease);
+  margin-top: .25rem;
+}
+.cta-form-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+.cta-form-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+.cta-form-note {
+  font-size: .72rem;
+  color: rgba(255,255,255,.32);
+  text-align: center;
+  margin-top: -.25rem;
 }
 
 /* ================================================================
@@ -2054,7 +2154,8 @@ img {
   .footer-bottom { flex-direction: column; text-align: center; }
 
   /* CTA Banner */
-  .cta-banner-content { padding: 3rem 1.5rem; }
+  .cta-banner-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .cta-form-row { grid-template-columns: 1fr; }
 
   /* Section bg label */
   .section-bg-label { font-size: 5rem; }

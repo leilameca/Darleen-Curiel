@@ -412,6 +412,41 @@
   });
 })();
 
+/* ─── CTA WHATSAPP FORM ─── */
+(function initCtaForm() {
+  const form = document.getElementById('ctaWaForm');
+  if (!form) return;
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const nombre     = form.nombre.value.trim();
+    const telefono   = form.telefono.value.trim();
+    const tratamiento = form.tratamiento.value;
+    const mensaje    = form.mensaje.value.trim();
+
+    if (!nombre || !tratamiento) {
+      const missing = !nombre ? form.nombre : form.tratamiento;
+      missing.focus();
+      missing.style.borderColor = '#e57373';
+      setTimeout(() => { missing.style.borderColor = ''; }, 2000);
+      return;
+    }
+
+    let text = `Hola, mi nombre es *${nombre}*.`;
+    text += `\nMe interesa: *${tratamiento}*.`;
+    if (telefono) text += `\nMi WhatsApp es: ${telefono}.`;
+    if (mensaje)  text += `\n\n${mensaje}`;
+
+    window.open(`https://wa.me/18296321151?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  });
+
+  // Clear red border on input
+  form.querySelectorAll('input, select').forEach(el => {
+    el.addEventListener('input', () => { el.style.borderColor = ''; });
+  });
+})();
+
 /* ─── INIT ─── */
 document.addEventListener('DOMContentLoaded', () => {
   // Lazy load images
