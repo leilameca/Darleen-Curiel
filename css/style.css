@@ -289,7 +289,7 @@ img {
   flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   background: none;
