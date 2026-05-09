@@ -286,17 +286,38 @@ img {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: .75rem;
   flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 64px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   background: none;
   display: block;
   transition: opacity .35s var(--ease);
 }
-.nav-logo-img:hover { opacity: .82; }
+.nav-logo:hover .nav-logo-img { opacity: .82; }
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.logo-main {
+  font-family: var(--f-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2em;
+  color: var(--c-black);
+}
+.logo-sub {
+  font-family: var(--f-sans);
+  font-size: .5rem;
+  font-weight: 400;
+  letter-spacing: .3em;
+  color: var(--c-gold);
+  text-transform: uppercase;
+}
 
 .nav-links {
   display: flex;
@@ -1613,11 +1634,10 @@ img {
   background: var(--c-cream);
   overflow: hidden;
 }
-.testimonials-wrap { position: relative; }
+.testimonials-wrap { position: relative; overflow: hidden; }
 .testimonials-track {
   display: flex;
   gap: 1.5rem;
-  overflow: hidden;
   cursor: grab;
 }
 .testimonials-track.dragging { cursor: grabbing; }
@@ -2094,6 +2114,8 @@ img {
   /* Nav */
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .nav-logo-text { display: none; }
+  .nav-logo-img { height: 48px; }
 
   /* Hero */
   .hero-deco { display: none; }
